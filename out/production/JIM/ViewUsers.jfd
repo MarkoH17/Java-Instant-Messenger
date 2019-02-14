@@ -1,0 +1,119 @@
+JFDML JFormDesigner: "6.0.2.0.116" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "JIM - View Online Users"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {comp tabbedPane1::l:::x}"
+					"$verticalGroup": "par l {comp tabbedPane1::l:::x}"
+				} ) {
+					name: "contentPanel"
+					add( new FormContainer( "javax.swing.JTabbedPane", new FormLayoutManager( class javax.swing.JTabbedPane ) ) {
+						name: "tabbedPane1"
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+							name: "panel1"
+							add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+								name: "scrollPane1"
+								add( new FormComponent( "javax.swing.JList" ) {
+									name: "list1"
+									auxiliary() {
+										"JavaCodeGenerator.customCreateCode": "new JList(listModel);"
+									}
+								} )
+							}, new FormLayoutConstraints( class java.lang.String ) {
+								"value": "Center"
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Neighboring Users"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+							"$horizontalGroup": "par l {seq {space :::p, par l {comp label5::l:::x, seq {comp label3:::p::p, space :::p, comp textField2:::::x, space u:::p, comp label4:::p::p, space :::p, comp textField3:::p:63:p}, seq t {space :0:0:x, par l {comp label6::t:p:360:p, comp separator1::t:p:360:p}}, seq l {comp label7:::p::p, space :::p, comp textField4:::p:203:p, space :::x, comp label8:::p::p, space :::p, comp textField5:::p:63:p}}, space :::p}}"
+							"$verticalGroup": "par l {seq l {space :::p, comp label5:::p::p, space :::p, par b {comp label3::b:p::p, comp textField3::b:p::p, comp label4::b:p::p, comp textField2::b:p::p}, space :p:12:p, comp separator1:::p:5:p, space :::p, comp label6:::p::p, space :::p, par b {comp label7::b:p::p, comp textField4::b:p::p, comp textField5::b:p::p, comp label8::b:p::p}, space ::43:x}}"
+						} ) {
+							name: "panel2"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label5"
+								"text": "Connect with Peer"
+								"horizontalAlignment": 0
+								"font": &SwingDerivedFont0 new com.jformdesigner.model.SwingDerivedFont( null, 1, 0, false )
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label3"
+								"text": "Address:"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField2"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label4"
+								"text": "Port:"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField3"
+								"text": "5704"
+							} )
+							add( new FormComponent( "javax.swing.JSeparator" ) {
+								name: "separator1"
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label6"
+								"text": "My Information"
+								"horizontalAlignment": 0
+								"font": #SwingDerivedFont0
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label7"
+								"text": "Address:"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField4"
+								"enabled": false
+							} )
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "label8"
+								"text": "Port:"
+							} )
+							add( new FormComponent( "javax.swing.JTextField" ) {
+								name: "textField5"
+								"enabled": false
+							} )
+						}, new FormLayoutConstraints( null ) {
+							"title": "Manual Connection"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 80"
+					"$rowSpecs": "0"
+					"$hGap": 5
+					"$vGap": 5
+				} ) {
+					name: "buttonBar"
+					"border": new javax.swing.border.EmptyBorder( 12, 0, 0, 0 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "okButton"
+						"text": "OK"
+						"enabled": false
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
